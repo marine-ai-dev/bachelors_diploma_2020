@@ -5,14 +5,8 @@
 
 ## 🇺🇦 Original presentation
 
-The original Ukrainian defense deck, `Антоневич_презентація_диплом_v4.pptx`
-(~22.6 MB), is **not committed to this repository**. It exceeded the size
-limit of the Google Drive access tooling available during this restoration
-(a 10 MB per-file cap), and no other safe retrieval path (local Drive sync,
-CLI tooling, or an authenticated browser session) was available in this
-environment. It remains archived in the author's Google Drive. This is a
-tooling limitation, not a privacy or licensing exclusion — nothing here is
-hidden on purpose.
+The original Ukrainian defense deck is archived here in full:
+[`original/Antonevych_bachelor_defense_presentation_2020_original.pptx`](original/Antonevych_bachelor_defense_presentation_2020_original.pptx) (~22.6 MB).
 
 ## 🇬🇧 English adaptation
 
@@ -20,23 +14,28 @@ A full, natural-English slide-by-slide adaptation of the presentation's
 content (not a literal machine translation — technical claims and figures
 are preserved exactly): [`english/presentation-en.md`](english/presentation-en.md).
 
-## 🖼️ Slide preview gallery
+## 🖼️ Slide gallery
 
-Per-slide screenshot rendering (`slides/slide-01.png`, etc.) was not produced
-in this pass — that requires converting the original `.pptx` (see above), which
-could not be retrieved. In its place, here are real diagrams and results the
-presentation itself was built around, pulled directly from the 2020 project
-source rather than recreated:
+[`slides/`](slides/) contains rendered previews of the first 25 of the
+original deck's 38 slides (`slide-01.jpg` … `slide-25.jpg`). The remaining
+slides (mostly further application-walkthrough screenshots) are covered in
+full text in the [English adaptation](english/presentation-en.md); their
+images just weren't rendered in this pass. The complete original is in the
+committed `.pptx` above if you want to see every slide directly.
 
-| DFD — Context Level | DFD — Level 1 |
+A few highlights:
+
+| Title Slide | AlexNet Architecture |
 |---|---|
-| ![DFD context diagram](../architecture/dfd_context.jpg) | ![DFD level 1 diagram](../architecture/dfd_level1.jpg) |
+| ![Title slide](slides/slide-01.jpg) | ![AlexNet architecture](slides/slide-12.jpg) |
 
-| Structural Diagram | Training Accuracy |
+| PlantVillage Dataset | Application Workflow |
 |---|---|
-| ![Structural diagram](../architecture/structure_diagram.png) | ![Accuracy curve](../../assets/results/25-04-2020_ACC.png) |
+| ![PlantVillage dataset](slides/slide-13.jpg) | ![Application workflow](slides/slide-20.jpg) |
 
-These are the same visuals featured in the root [README](../../README.md#️-project-preview).
+Browse the full set in [`slides/`](slides/) for the rest (relevance
+statistics, DFD diagrams, per-model training curves, and the application
+walkthrough).
 
 ## 🚫 Excluded from this repository
 
