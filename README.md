@@ -32,6 +32,26 @@ This project automates that diagnosis. A user uploads a photo of a plant leaf, a
 
 ---
 
+## 🖼️ Project Preview
+
+*Real artifacts from the original 2020 build — application UI, system design diagrams, and training results.*
+
+| Application UI | Case History |
+|---|---|
+| ![Main upload page](assets/screenshots/app_main_page.jpg) | ![Case history page](assets/screenshots/app_history_page.jpg) |
+
+| Training Accuracy | Training Loss |
+|---|---|
+| ![Accuracy curve](assets/results/25-04-2020_ACC.png) | ![Loss curve](assets/results/25-04-2020_LOSS.png) |
+
+| System Data Flow | Structural Diagram |
+|---|---|
+| ![DFD level 1](docs/architecture/dfd_level1.jpg) | ![Structural diagram](docs/architecture/structure_diagram.png) |
+
+> 📸 Screenshots are lightly cropped from original 2020 desktop captures (removing browser chrome/taskbar) — nothing in them has been redrawn or fabricated.
+
+---
+
 ## 🏗️ System Architecture
 
 ```mermaid
