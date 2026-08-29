@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<link type="text/css" media="all" rel="stylesheet" href="/static/css/style_for_pages.css"> 
+	<link type="text/css" media="all" rel="stylesheet" href="/static/css/style_for_Treatment2Page.css">
+	<link rel="shortcut icon" href="/static/icons/emblem_1.ico">
+	<title> PLANT DISEASE AI DETECTION </title> 
+	<meta http-equiv="Content-Language" content="uk"/>
+</head>
+
+
+<!-------------------------------------------------------------->
+<body>
+
+<div class="wrapper"> 
+
+	<div class="title">	<a href="HomePage.html" 	class="crystal_clear_button"> PLANT DISEASE AI DETECTION  </a> </div>
+	<div class="btn1"> 	<a href="Main1Page.html"   	class="crystal_clear_button btn">  MAIN </a> </div>
+	<div class="btn2"> 	
+		<div 	class="crystal_clear_button dropdown btn "> MORE &#9660;
+			<div class="dropdown-content">
+				<a href="HistoryPage.html" class="crystal_clear_button btn_2"> CASE HISTORY </a> 
+				<a href="Treatment1Page.html" class="crystal_clear_button btn_2"> ADD TREATMENT </a> 
+				<a href="Treatment2Page.html" class="crystal_clear_button btn_2"> TREATMENT HISTORY </a> 
+				<a href="Statistics1Page.html" class="crystal_clear_button btn_2"> STATISTICS </a>
+			</div>
+		</div>
+	</div>
+	<div class="btn3"> 	<a href="AboutPage.html"   	class="crystal_clear_button btn"> ABOUT   </a> </div>
+
+	
+	<div class="PageBody">
+		<table>
+			<tr>
+				<th>TREATMENT (No)</th>
+				<th>TREATMENT RECORD DATE</th> 
+				<th>CASE (No)</th>
+				<th>CASE DATE</th> 
+				<th>PROBABILITY</th> 
+				<th>CLASSIFICATION RESULT</th>
+				<th>DRUG NAME</th>
+				<th>PHARMA COMPANY NAME</th>
+				<th>TREATMENT RESULT</th>
+			</tr>
+			
+			{% for row in records%}
+			<tr>
+				<td>{{row[0]}}</td>
+				<td>{{row[1]}}</td>
+				<td>{{row[2]}}</td>
+				<td>{{row[3]}}</td>
+				<td>{{row[4]}}</td>
+				<td>{{row[5]}}</td>
+				<td>{{row[6]}}</td>
+				<td>{{row[7]}}</td>
+				<td>{{row[8]}}</td>
+			</tr>
+			{% endfor %}
+			
+		</table>
+	<div> <a href="Treatment1Page.html" class="crystal_clear_button add_treatment_records"> ADD SOME RECORDS </a> </div>
+	
+	</div>
+	
+
+
+</div>
+
+
+</body>
+</html>
+

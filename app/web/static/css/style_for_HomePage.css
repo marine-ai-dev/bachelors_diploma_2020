@@ -1,0 +1,62 @@
+/*-------------- FULL BLOCK -------------*/
+html{
+	background-image: url('/static/pics/field_4.jpg');	
+}
+/*-------------- BODY BLOCK -------------*/
+
+.PageBody {
+	height:500px;
+}
+/*------------- BUTTON CLASS ------------*/
+
+.button {
+	height: 50px;
+	width: 256px;
+	background-color: var(--lightgreen);
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+	font-variant:small-caps;
+	font-size:65%;
+	border: none;
+	color: var(--mint);
+	margin: 10px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+
+
+
+.flat_background {
+	font-size:90%;
+	background: rgba(88, 157, 98, 0.7);
+	padding: 20px;
+	color: white;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	
+	box-shadow: 0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+	inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+	inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+	inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+	inset 0 -15px 30px rgba(0,0,0,0.8); /* Dark Background */
+
+	-webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
+	inset 0 1px rgba(255,255,255,0.3),
+	inset 0 10px rgba(255,255,255,0.2),
+	inset 0 10px 20px rgba(255,255,255,0.25),
+	inset 0 -15px 30px rgba(0,0,0,0.8);
+	
+	-moz-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
+	inset 0 1px rgba(255,255,255,0.3),
+	inset 0 10px rgba(255,255,255,0.2),
+	inset 0 10px 20px rgba(255,255,255,0.25),
+	inset 0 -15px 30px rgba(0,0,0,0.8);
+	
+	display: inline-block;
+	margin: 80px;
+}

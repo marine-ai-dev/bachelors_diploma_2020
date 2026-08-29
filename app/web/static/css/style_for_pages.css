@@ -1,0 +1,205 @@
+/*-------------- VARIABLES --------------*/
+:root {
+  --mint: 		#589d62;
+  --lightgreen: #c6dc93;
+  --img_size: 	256;
+}
+
+/*-------------- ALL HTML ---------------*/
+html {
+	border: 0px solid black;
+	font-family: "Times New Roman", Times, serif;
+	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+/*------------- DIV BLOCKS --------------*/
+div {
+	border: 0px solid black;
+}
+
+/*------------- GRID LAYOUT -------------*/
+.wrapper {
+	width:100%;
+	display: grid;
+}
+
+/*---------- ALL BUTTONS BLOCK ------------*/
+.title, .btn1, .btn2, .btn3 {
+	text-align:center;
+	font-weight:bold;
+	font-variant:small-caps;
+	font-size: 250%;
+}
+
+.title {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	width: 100%;
+		
+}
+
+.btn1, .btn2, .btn3 {
+	width: 100%;
+}
+
+
+.btn1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.btn2 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.btn3 {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+
+.crystal_clear_button {
+	color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 7px;
+	border: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	
+	box-shadow: 0 2px 8px rgba(0,0,0,0.3), /* Exterior Shadow */
+	inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+	inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+	inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+	inset 0 -15px 30px rgba(0,0,0,0.4); /* Dark Background */
+
+	-webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.3),
+	inset 0 1px rgba(255,255,255,0.3),
+	inset 0 10px rgba(255,255,255,0.2),
+	inset 0 10px 20px rgba(255,255,255,0.25),
+	inset 0 -15px 30px rgba(0,0,0,0.4);
+	
+	display: inline-block;
+	width: 98.55%;
+	margin: 0 auto;
+}
+
+.crystal_clear_button:hover {
+	opacity: 0.9;
+    filter: alpha(opacity=9);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+}
+
+.btn,.btn_2 {
+	width: 96%;
+}
+
+.btn_2
+{
+	font-size:50%;
+	background: var(--mint);
+	padding:7px;
+}
+
+
+/*-------------- DROP DOWN MENU -----------*/
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	color: black;
+	z-index: 1;
+	width:30%;
+	background: var(--mint);
+	padding:-15px;
+	margin:10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .PageBody {
+
+}
+
+
+
+/*-------------- BODY BLOCK -------------*/
+.PageBody {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	height: 100%;
+	border: 0px solid var(--lightgreen);
+	text-align:center;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+	font-variant:small-caps;
+	font-size:200%;
+	color: var(--mint);
+}
+
+/*------------- FLASH ALERT ------------*/
+.flash_alert_success, .flash_alert_warning {
+	color: black;
+	border: 1px solid black;
+	padding: 5px;
+	
+	color: white;
+    cursor: pointer;
+    text-decoration: none;
+	border: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	
+	box-shadow: 0 2px 8px rgba(0,0,0,0.3), /* Exterior Shadow */
+	inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+	inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+	inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+	inset 0 -15px 30px rgba(0,0,0,0.4); /* Dark Background */
+
+	-webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.3),
+	inset 0 1px rgba(255,255,255,0.3),
+	inset 0 10px rgba(255,255,255,0.2),
+	inset 0 10px 20px rgba(255,255,255,0.25),
+	inset 0 -15px 30px rgba(0,0,0,0.4);
+}
+
+.flash_alert_success{
+	background-color: rgba(0, 255, 0, 0.9);
+}
+
+.flash_alert_warning {
+	background-color: rgba(255, 215, 0, 0.9);
+}
+
+.close_button {
+	height: 25px;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+	font-variant:small-caps;
+	border: none;
+	cursor: pointer;
+	background: transparent;
+	width: 5%;
+	padding: 5px;
+}
+
+/*------------- ---------- ------------*/
+
+
+
+
+
