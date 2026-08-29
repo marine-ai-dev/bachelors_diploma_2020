@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<link type="text/css" media="all" rel="stylesheet" href="/static/css/style_for_pages.css"> 
+	<link type="text/css" media="all" rel="stylesheet" href="/static/css/style_for_Treatment1Page.css">
+	<link rel="shortcut icon" href="../static/icons/emblem_1.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="/static/js/delete_a_flash_message.js"></script>
+	<title> PLANT DISEASE AI DETECTION </title> 
+	<meta http-equiv="Content-Language" content="uk"/>
+</head>
+
+
+<!-------------------------------------------------------------->
+<body>
+
+<div class="wrapper"> 
+
+	<div class="title">	<a href="HomePage.html" 	class="crystal_clear_button"> PLANT DISEASE AI DETECTION  </a> </div>
+	<div class="btn1"> 	<a href="Main1Page.html"   	class="crystal_clear_button btn">  MAIN </a> </div>
+	<div class="btn2"> 	
+		<div 	class="crystal_clear_button dropdown btn "> MORE &#9660;
+			<div class="dropdown-content">
+				<a href="HistoryPage.html" class="crystal_clear_button btn_2"> CASE HISTORY </a> 
+				<a href="Treatment1Page.html" class="crystal_clear_button btn_2"> ADD TREATMENT </a> 
+				<a href="Treatment2Page.html" class="crystal_clear_button btn_2"> TREATMENT HISTORY </a> 
+				<a href="Statistics1Page.html" class="crystal_clear_button btn_2"> STATISTICS </a>
+			</div>
+		</div>
+	</div>
+	<div class="btn3"> 	<a href="AboutPage.html"   	class="crystal_clear_button btn"> ABOUT   </a> </div>
+
+	
+	<div class="PageBody">
+		{% with success = get_flashed_messages(category_filter=["success"]) %}
+			{% if success %}
+				{%- for message in success %}
+					<div class="flash_alert_success">
+						<span> <i> {{message}} </i></span>
+						<button class="crystal_clear_button close_button" onclick="delete_a_flash_message_success()" >
+							<span>close</span>
+						</button>
+					</div>
+					
+				{% endfor %}
+			{% endif %}
+		{% endwith %}	
+	
+	
+		{% with errors = get_flashed_messages(category_filter=["warning"]) %}
+			{% if errors %}
+				{%- for message in errors %}
+					<div class="flash_alert_warning">
+						<span> <i> {{message}} </i></span>
+						<button class="crystal_clear_button close_button" onclick="delete_a_flash_message_warning()" >
+							<span>close</span>
+						</button>
+					</div>
+					
+				{% endfor %}
+			{% endif %}
+		{% endwith %}
+	
+	
+		<form action="/Treatment1Page.html" method="POST" enctype="multipart/form-data" id="frm">
+			<div class="wrapper"> 
+				<div class="case_of_the_disease">
+						
+						<select size="1" class="crystal_clear_button select_case" name="select_1">
+							<option disabled selected>CASE OF THE DISEASE</option>
+							{% for row_1 in records_1%}
+							<option value="{{row_1[0]}}/{{row_1[1]}}/{{row_1[2]}}/{{row_1[3]}}/{{row_1[4]}}"> (№{{row_1[0]}}) / {{row_1[1]}} / {{row_1[2]}} / {{row_1[3]}}</option>
+							{% endfor %}
+						</select>
+				</div>
+
+				<div class="drug_name">
+					<select size="1" class="crystal_clear_button select_drug" name="select_2">
+						<option disabled selected>DRUG NAME</option>
+						{% for row_2 in records_2%}
+						<option value="{{row_2[0]}}/{{row_2[1]}}/{{row_2[2]}}">{{row_2[1]}} ({{row_2[2]}})</option>
+						{% endfor %}
+					</select>	
+				</div>
+								
+				
+				<div class="treatment_result">
+					<textarea  placeholder="add something there about treatment result" name="text_area"></textarea>
+				</div>
+				
+				<div class="record">
+					<button class="crystal_clear_button add_record" type="submit"> ADD A RECORD TO DB</button>
+				</div>
+			</div>	
+		</form>
+	
+		<div> <a href="Treatment2Page.html" class="crystal_clear_button go_to_treatment_history"> GO TO TREATMENT HISTORY </a> </div>
+
+	</div>
+	
+
+
+</div>
+
+
+</body>
+</html>
+

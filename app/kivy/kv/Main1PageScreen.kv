@@ -1,0 +1,143 @@
+<Main1PageScreen>
+#------------------------------ CONSTANTS ------------------------------#
+
+#:set white 		(1.0, 1.0, 1.0, 1.0)
+#:set black 		(0.0, 0.0, 0.0, 1.0)
+#:set lightgreen    (0.7764, 0.8627, 0.5764, 1.0)
+#:set mint  		(0.3450, 0.6156, 0.3843, 1.0)
+#:set deepskyblue 	(0.0, 0.7090, 1.0, 1.0)
+
+#:set my_btn_coefficient  7.5
+#:set my_row_height 65
+#:set my_font_size dp(18)
+#:set my_font_coefficient 20
+#:set img_size 256
+#------------------------------ BACKGROUND -----------------------------#
+
+#BACKGROUND COLOR
+	canvas.before:
+		Color:
+			rgba: mint
+		Rectangle:
+			pos: self.pos
+			size: self.size
+			#source: "..\\application\\pics\\apple_flower_3.JPG"
+			
+		
+#------------------------------- BUTTONS -------------------------------#
+
+	#TYPE OF LAYOUT FOR NEXT ELEMENTS
+	GridLayout:
+		rows: 3
+		#row_default_height: my_row_height
+		#row_force_default: True
+		#rows_minimum: {0: my_row_height, 1: my_row_height}
+				
+		#BUTTON-0 (PLANT DISEASE AI DETECTION)
+		Button:
+			text: "PLANT DISEASE AI DETECTION"
+			color: white
+			background_normal: ''
+			background_color: mint
+			font_size: self.width/my_font_coefficient
+			size_hint_y: None
+			height: my_row_height
+		
+		GridLayout:
+			rows: 1
+			size_hint_y: None
+			height: my_row_height
+			
+			#BUTTON-1 (MAIN)
+			Button:
+				text: "MAIN"
+				color: mint
+				background_normal: ''
+				background_color: lightgreen
+				font_size: self.width/my_btn_coefficient
+				on_press: root.manager.current = 'main1page'
+		
+			#BUTTON-2 (HISTORY)			
+			Button:
+				text: "HISTORY"
+				color: white
+				background_normal: ''
+				background_color: mint
+				font_size: self.width/my_btn_coefficient
+				on_press: root.manager.current = 'historypage'	
+				
+				
+			#BUTTON-3 (ABOUT)	
+			Button:
+				text: "ABOUT"
+				color: white
+				background_normal: ''
+				background_color: mint
+				font_size: self.width/my_btn_coefficient
+				on_press: root.manager.current = 'aboutpage'	
+		
+
+		
+		FloatLayout:
+			#BUTTON-4 (IMAGE)
+			Button: 
+				text: "AN IMAGE\n 256X256"
+				color: white
+				background_normal: ''
+				background_color: lightgreen
+				size_hint: (None, None)
+				size: dp(img_size), dp(img_size)
+				pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+				font_size: my_font_size
+				
+			#BUTTON-5 (TAKE A PHOTO)
+			Button: 
+				text: "TAKE A PHOTO"
+				color: white
+				background_normal: ''
+				background_color: lightgreen
+				size_hint: (None, None)
+				size: dp(img_size), dp(img_size/6)
+				#pos: (200, 200)
+				pos_hint: {'center_x': 0.5, 'center_y': 0.35}	
+				font_size: my_font_size
+				
+			#BUTTON-6 (OPEN FROM GALLERY)
+			Button: 
+				text: "OPEN FROM GALLERY"
+				color: white
+				background_normal: ''
+				background_color: lightgreen
+				size_hint: (None, None)
+				size: dp(img_size), dp(img_size/6)
+				pos_hint: {'center_x': 0.5, 'center_y': 0.25}	
+				font_size: my_font_size			
+			
+			#BUTTON-7 (ANALYZE!)
+			Button: 
+				text: "ANALYZE!"
+				color: white
+				background_normal: ''
+				background_color: lightgreen
+				size_hint: (None, None)
+				size: dp(img_size), dp(img_size/6)
+				pos_hint: {'center_x': 0.5, 'center_y': 0.1}	
+				font_size: my_font_size				
+								
+					
+				
+				
+
+
+
+			
+			
+
+		
+			
+		
+
+
+
+
+

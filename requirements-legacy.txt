@@ -1,0 +1,22 @@
+# Historical dependency notes (2020)
+#
+# No requirements.txt or pip-freeze output survived in the original project
+# source. Versions below are only what could be confirmed from code/thesis
+# evidence (Table 3.1 of the thesis, for the final/best training run).
+# Everything else is unpinned in the original project — do not treat the
+# unpinned entries as verified; they are simply the libraries the code
+# imports.
+#
+# Confirmed (from thesis Table 3.1, Model 4 — the deployed configuration):
+torch==1.5.0
+torchvision==0.6.0
+
+# Referenced by code, version NOT confirmed from any surviving artifact:
+Flask
+mysql-connector-python
+numpy
+matplotlib
+Pillow
+kivy
+
+# Original environment (per thesis system requirements): Python 3.6, Windows.

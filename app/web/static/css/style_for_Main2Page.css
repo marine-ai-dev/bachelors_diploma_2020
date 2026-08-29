@@ -1,0 +1,133 @@
+/*-------------- FULL BLOCK -------------*/
+html{
+	background-image: url('/static/pics/field_11.jpg');	
+}
+
+
+/*-------------- UPLOAD FILE ------------*/
+
+.ViewImage {
+	height: 256px;
+	width: 256px;
+	font-size:90%;
+	background-color: var(--lightgreen);
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	border: 10px solid white;
+}
+img {
+	height: 256px;
+	width: 256px;
+}
+
+/*--------- CLASSIFICATION RESULT -------*/
+
+table, th, td {
+	border-collapse: collapse;
+	border: 2px solid white;
+	color: white;
+	text-align:left;
+	vertical-align: top;
+}
+
+table {
+	width: 100%;
+	padding: 20px;
+	color: white;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	
+	box-shadow: 0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+	inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+	inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+	inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+	inset 0 -15px 30px rgba(0,0,0,0.8); /* Dark Background */
+
+	-webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
+	inset 0 1px rgba(255,255,255,0.3),
+	inset 0 10px rgba(255,255,255,0.2),
+	inset 0 10px 20px rgba(255,255,255,0.25),
+	inset 0 -15px 30px rgba(0,0,0,0.8);
+	
+	-moz-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
+	inset 0 1px rgba(255,255,255,0.3),
+	inset 0 10px rgba(255,255,255,0.2),
+	inset 0 10px 20px rgba(255,255,255,0.25),
+	inset 0 -15px 30px rgba(0,0,0,0.8);
+
+}
+
+table.result_table {
+	margin-top: 40px;
+	background: rgba(88, 157, 98, 0.7);
+	
+}
+
+
+th {
+	width: 25%;
+	font-size:70%;
+	text-align:left;
+	padding: 20px;
+}
+
+td{
+	font-size:70%;
+	text-align:justify;
+	font-weight:normal;
+	font-variant:normal;
+	padding: 20px;
+}
+
+.scroll_for_drug_table, table.drug_table {
+	height: 300px;
+}
+
+.scroll_for_drug_table {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+table.drug_table {
+	font-size:120%;
+	vertical-align: top;
+}
+
+th.treatment_heading  {
+	text-align:center;
+	vertical-align: middle;
+	padding: 2px;
+}
+
+td.drug_name, td.drug_pharma_company_name{
+	text-align:center;
+	padding: 2px;
+}
+td.drug_description, td.instruction_description{
+	text-align:justify;
+}
+
+/*------------- BUTTON CLASS ------------*/
+ a.try_again_button{
+	height: 50px;
+	line-height: 50px;
+	width: 256px;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+	font-variant:small-caps;
+	font-size:65%;
+	vertical-align:middle;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background: transparent;
+	padding-top: 0px;
+ 
+}
+
+

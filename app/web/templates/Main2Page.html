@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<link type="text/css" media="all" rel="stylesheet" href="/static/css/style_for_pages.css"> 
+	<link type="text/css" media="all" rel="stylesheet" href="/static/css/style_for_Main2Page.css">
+	<link rel="shortcut icon" href="/static/icons/emblem_1.ico">
+	<title> PLANT DISEASE AI DETECTION </title> 
+	<meta http-equiv="Content-Language" content="uk"/>
+</head>
+
+
+<!-------------------------------------------------------------->
+<body>
+
+<div class="wrapper"> 
+
+	<div class="title">	<a href="HomePage.html" 	class="crystal_clear_button"> PLANT DISEASE AI DETECTION  </a> </div>
+	<div class="btn1"> 	<a href="Main1Page.html"   	class="crystal_clear_button btn">  MAIN </a> </div>
+	<div class="btn2"> 	
+		<div 	class="crystal_clear_button dropdown btn "> MORE &#9660;
+			<div class="dropdown-content">
+				<a href="HistoryPage.html" class="crystal_clear_button btn_2"> CASE HISTORY </a> 
+				<a href="Treatment1Page.html" class="crystal_clear_button btn_2"> ADD TREATMENT </a> 
+				<a href="Treatment2Page.html" class="crystal_clear_button btn_2"> TREATMENT HISTORY </a> 
+				<a href="Statistics1Page.html" class="crystal_clear_button btn_2"> STATISTICS </a>
+			</div>
+		</div>
+	</div>
+	<div class="btn3"> 	<a href="AboutPage.html"   	class="crystal_clear_button btn"> ABOUT   </a> </div>
+
+	<!-------------------------------------------------------------->
+	
+	<div class="PageBody">
+		<div class="ViewImage"> <img src="{{src1}}" alt="IMAGE VIEW" /> </div>
+		
+		<div> 
+			<table class = "result_table">
+				{% if is_disease is sameas true %}
+				<tr>
+					<th> CLASSIFICATION RESULT</th>
+					<td> with {{prob}}% it is a/an {{disease_name}} </td>
+				</tr>
+				<tr>
+					<th>PATHOGEN</th>
+					<td>{{pathogen}}</td>
+				</tr>
+				<tr>
+					<th>DISEASE DESCRIPTION</th>
+					<td>
+						{{disease_description}}
+						
+					</td>
+				</tr>
+				
+				<tr>
+					<th>POSSIBLE TREATMENT</th>
+					<td> 
+						<div class="scroll_for_drug_table">
+							<table class="drug_table">
+								<tr>
+									<th  class = "treatment_heading"> DRUG NAME </th>
+									<th  class = "treatment_heading"> PHARMA COMPANY NAME </th>
+									<th  class = "treatment_heading"> DRUG DESCRIPTION </th>
+									<th  class = "treatment_heading"> INSTRUCTION DESCRIPTION </th>
+								</tr>
+							
+							{% for row in records%}
+							<tr>
+								<td class="drug_name">{{row[0]}}</td>
+								<td class="drug_pharma_company_name">{{row[1]}}</td>
+								<td class="drug_description">
+									<details>
+										<summary> <i> click to read more </i></summary>
+										{{row[2]}}
+									</details>
+								</td>
+								
+								<td class="instruction_description">
+									<details>
+										<summary><i> click to read more </i></summary>
+										{{row[3]}}
+										</details>
+								</td>
+							</tr>
+							{% endfor %}
+						</table>
+					</div>
+					</td>
+				<tr>
+				{% else %}
+				<tr>
+					<th> CLASSIFICATION RESULT</th>
+					<td> with {{prob}}% it is a/an {{class_alias_name}} </td>
+				</tr>				
+				{% endif %}
+
+				
+			</table>
+		</div>
+		<div> <a href="Main1Page.html"   class="crystal_clear_button try_again_button"> TRY AGAIN </a> </div>
+	</div>
+	<!-------------------------------------------------------------->
+
+
+</div>
+
+
+</body>
+</html>
+
