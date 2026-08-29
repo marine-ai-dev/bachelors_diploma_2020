@@ -5,8 +5,9 @@
 
 ## 🇺🇦 Original presentation
 
-The original Ukrainian defense deck is archived here in full:
-[`original/Antonevych_bachelor_defense_presentation_2020_original.pptx`](original/Antonevych_bachelor_defense_presentation_2020_original.pptx) (~22.6 MB).
+The complete original Ukrainian defense deck (38 slides) is archived here in
+full: [`original/Antonevych_bachelor_defense_presentation_2020_original.pptx`](original/Antonevych_bachelor_defense_presentation_2020_original.pptx)
+(22,608,707 bytes).
 
 ## 🇬🇧 English adaptation
 
@@ -14,14 +15,10 @@ A full, natural-English slide-by-slide adaptation of the presentation's
 content (not a literal machine translation — technical claims and figures
 are preserved exactly): [`english/presentation-en.md`](english/presentation-en.md).
 
-## 🖼️ Slide gallery
+## 🖼️ Complete slide gallery
 
-[`slides/`](slides/) contains rendered previews of the first 25 of the
-original deck's 38 slides (`slide-01.jpg` … `slide-25.jpg`). The remaining
-slides (mostly further application-walkthrough screenshots) are covered in
-full text in the [English adaptation](english/presentation-en.md); their
-images just weren't rendered in this pass. The complete original is in the
-committed `.pptx` above if you want to see every slide directly.
+[`slides/`](slides/) contains rendered previews of **all 38 slides**
+(`slide-01.jpg` … `slide-38.jpg`) of the original deck.
 
 A few highlights:
 
@@ -33,9 +30,14 @@ A few highlights:
 |---|---|
 | ![PlantVillage dataset](slides/slide-13.jpg) | ![Application workflow](slides/slide-20.jpg) |
 
-Browse the full set in [`slides/`](slides/) for the rest (relevance
-statistics, DFD diagrams, per-model training curves, and the application
-walkthrough).
+Browse the full set in [`slides/`](slides/) for the rest — relevance
+statistics, DFD diagrams, per-model training curves, the complete
+application walkthrough, and the conclusions slide.
+
+> 🔒 Two slides (36 and 38) originally displayed personal Gmail addresses
+> (the author's and her supervisor's) in on-screen UI/contact text. Those
+> addresses have been redacted (blacked out) in the committed images —
+> everything else on those slides is untouched.
 
 ## 🚫 Excluded from this repository
 

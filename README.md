@@ -155,9 +155,9 @@ Full table with hardware/timing: [`docs/results.md`](docs/results.md).
 
 ## 🎞️ Presentation
 
-🇺🇦 Original Ukrainian defense deck: [`docs/presentation/original/`](docs/presentation/original/Antonevych_bachelor_defense_presentation_2020_original.pptx)
+🇺🇦 Original Ukrainian defense deck (full `.pptx`, 38 slides): [`docs/presentation/original/`](docs/presentation/original/Antonevych_bachelor_defense_presentation_2020_original.pptx)
 🇬🇧 Full slide-by-slide **English adaptation**: [`docs/presentation/english/presentation-en.md`](docs/presentation/english/presentation-en.md)
-🖼️ Browsable slide gallery: [`docs/presentation/`](docs/presentation/README.md)
+🖼️ Complete 38-slide visual gallery: [`docs/presentation/`](docs/presentation/README.md)
 
 | Title Slide | AlexNet Architecture |
 |---|---|
