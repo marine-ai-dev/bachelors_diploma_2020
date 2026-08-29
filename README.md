@@ -65,6 +65,8 @@ flowchart LR
     F -->|log classification case| DB
 ```
 
+![Application workflow diagram](docs/presentation/slides/slide-20.jpg)
+
 Full breakdown (components, data flow, what changed during restoration): [`docs/architecture.md`](docs/architecture.md).
 
 ---
@@ -74,6 +76,8 @@ Full breakdown (components, data flow, what changed during restoration): [`docs/
 ### 📊 Dataset
 
 **[PlantVillage](data/README.md)** — 54,306 leaf images, 38 classes (12 healthy, 26 diseased), 14 crop species. 80/20 train/test split on the segmented image variant. *Not redistributed in this repo* — see [`data/README.md`](data/README.md) for how to obtain it.
+
+![PlantVillage dataset composition](docs/presentation/slides/slide-13.jpg)
 
 ### 🤖 Model
 
@@ -151,7 +155,13 @@ Full table with hardware/timing: [`docs/results.md`](docs/results.md).
 
 ## 🎞️ Presentation
 
-The original Ukrainian defense presentation is documented (not committed as a binary — see [`docs/presentation/README.md`](docs/presentation/README.md) for why), alongside a full slide-by-slide **English adaptation**: [`docs/presentation/english/presentation-en.md`](docs/presentation/english/presentation-en.md).
+🇺🇦 Original Ukrainian defense deck: [`docs/presentation/original/`](docs/presentation/original/Antonevych_bachelor_defense_presentation_2020_original.pptx)
+🇬🇧 Full slide-by-slide **English adaptation**: [`docs/presentation/english/presentation-en.md`](docs/presentation/english/presentation-en.md)
+🖼️ Browsable slide gallery: [`docs/presentation/`](docs/presentation/README.md)
+
+| Title Slide | AlexNet Architecture |
+|---|---|
+| ![Title slide](docs/presentation/slides/slide-01.jpg) | ![AlexNet architecture](docs/presentation/slides/slide-12.jpg) |
 
 ---
 
