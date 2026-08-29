@@ -1,0 +1,135 @@
+/*-------------- FULL BLOCK -------------*/
+html {
+	background-image: url('/static/pics/field_15.jpg');
+
+}
+
+/*-------------- BODY BLOCK -------------*/
+
+.case_of_the_disease, .drug_name, .treatment_result, .record, .treatment_history{
+	border: 0px solid white;
+	padding: 35px;
+}
+
+.case_of_the_disease, .drug_name {
+	
+}
+
+.case_of_the_disease{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	
+}
+
+.drug_name {
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.treatment_result{
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.record{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+.select_case, .select_drug, .add_record{
+	height: 50px;
+	background:rgba(88, 157, 98, 0.7);
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+	font-variant:small-caps;
+	font-size:65%;
+	
+}
+
+.add_record{
+	width:100%;
+
+}
+
+textarea{
+	width:100%;
+	height:95%;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+	font-variant:small-caps;
+	font-size:90%;
+	resize: none;
+}
+
+.treatment_history{
+	width:100%;
+	height:200px;
+}
+
+.treatment_history_table{
+	width: 100%;
+	padding: 20px;
+	border-collapse: collapse;
+	text-align:center;
+	vertical-align: middle;
+	font-size: 70%;
+	
+	border: 20px solid white;
+	
+	background: rgba(88, 157, 98, 0.7);
+	padding: 20px;
+	color: white;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	
+	box-shadow: 0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+	inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+	inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+	inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+	inset 0 -15px 30px rgba(0,0,0,0.8); /* Dark Background */
+
+	-webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
+	inset 0 1px rgba(255,255,255,0.3),
+	inset 0 10px rgba(255,255,255,0.2),
+	inset 0 10px 20px rgba(255,255,255,0.25),
+	inset 0 -15px 30px rgba(0,0,0,0.8);
+	
+	-moz-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
+	inset 0 1px rgba(255,255,255,0.3),
+	inset 0 10px rgba(255,255,255,0.2),
+	inset 0 10px 20px rgba(255,255,255,0.25),
+	inset 0 -15px 30px rgba(0,0,0,0.8);
+	
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.go_to_treatment_history{
+	height: 50px;
+	line-height:50px;
+	width:30%;
+	font-size:65%;
+	margin-top:20px;
+	background: transparent;
+	padding:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
