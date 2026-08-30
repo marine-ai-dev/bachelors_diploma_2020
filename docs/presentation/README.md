@@ -6,8 +6,9 @@
 ## 🇺🇦 Original presentation
 
 The complete original Ukrainian defense deck (38 slides) is archived here in
-full: [`original/Antonevych_bachelor_defense_presentation_2020_original.pptx`](original/Antonevych_bachelor_defense_presentation_2020_original.pptx)
-(22,608,707 bytes).
+full:
+- [`.pptx`](original/Antonevych_bachelor_defense_presentation_2020_original.pptx) (22,608,707 bytes) — the original file, byte-for-byte
+- [`.pdf`](original/Antonevych_bachelor_defense_presentation_2020_original.pdf) — a PDF export (via LibreOffice) for quick viewing without PowerPoint/Keynote
 
 ## 🇬🇧 English adaptation
 

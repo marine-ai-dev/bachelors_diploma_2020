@@ -9,6 +9,19 @@
 
 ---
 
+## ℹ️ About
+
+🌾 Plant diseases are a major threat to food security all over the world — they hit yield *and* quality for growers of food, fiber, **and** biofuel crops all at once.
+🦠 Plant pathogens can be viral, fungal, or bacterial, damaging plant parts above or below the ground.
+🤖 This app is an image-recognition system that detects and classifies diseases across **14 crop species**: 🍎 apple, 🫐 blueberry, 🍒 cherry, 🌽 corn, 🍇 grape, 🍊 orange, 🍑 peach, 🫑 pepper, 🥔 potato, 🍓 raspberry, 🫘 soybean, 🎃 squash, 🍓 strawberry, and 🍅 tomato.
+📸 Upload a photo → 🧠 get a diagnosis → 💊 get a treatment recommendation.
+
+*(Paraphrased from the app's own in-product About page — see it below.)*
+
+![The app's own About page](docs/presentation/slides/slide-35.jpg)
+
+---
+
 ## 🧭 Quick Navigation
 
 | | | |
@@ -98,6 +111,16 @@ Full training comparison across 4 configurations: [`docs/results.md`](docs/resul
 - **📱 Kivy prototype** (`app/kivy/`) — a partial, parallel mobile UI experiment (3 screens), not wired to the model or database.
 - **🗄️ MySQL integration** (`database/`) — schema for diseases, drugs, treatment instructions, and logged classification/treatment history.
 
+### 📸 More App Screens
+
+| 📤 Upload a Photo | 🔬 Classification Result |
+|---|---|
+| ![Main-1 upload page](docs/presentation/slides/slide-23.jpg) | ![Main-2 classification result](docs/presentation/slides/slide-28.jpg) |
+
+| 💊 Add Treatment | 🧾 Treatment History |
+|---|---|
+| ![Add treatment page](docs/presentation/slides/slide-31.jpg) | ![Treatment history table](docs/presentation/slides/slide-33.jpg) |
+
 ---
 
 ## 🗂️ Repository Structure
@@ -147,6 +170,10 @@ Honest disclosure: this is a 2020 codebase with no pinned dependency versions an
 
 Full table with hardware/timing: [`docs/results.md`](docs/results.md).
 
+### 🧪 Experiment Slide
+
+![Model 4 training curves and final result](docs/presentation/slides/slide-18.jpg)
+
 ---
 
 ## 📚 Thesis
@@ -155,7 +182,7 @@ Full table with hardware/timing: [`docs/results.md`](docs/results.md).
 
 ## 🎞️ Presentation
 
-🇺🇦 Original Ukrainian defense deck (full `.pptx`, 38 slides): [`docs/presentation/original/`](docs/presentation/original/Antonevych_bachelor_defense_presentation_2020_original.pptx)
+🇺🇦 Original Ukrainian defense deck (38 slides): [`.pptx`](docs/presentation/original/Antonevych_bachelor_defense_presentation_2020_original.pptx) · [`.pdf`](docs/presentation/original/Antonevych_bachelor_defense_presentation_2020_original.pdf)
 🇬🇧 Full slide-by-slide **English adaptation**: [`docs/presentation/english/presentation-en.md`](docs/presentation/english/presentation-en.md)
 🖼️ Complete 38-slide visual gallery: [`docs/presentation/`](docs/presentation/README.md)
 
